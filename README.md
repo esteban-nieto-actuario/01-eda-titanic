@@ -12,8 +12,8 @@ Análisis exploratorio del dataset del Titanic para identificar patrones en los 
 - Age tiene 19.9% de valores faltantes - imputados con mediana
 - Cabin tiene 77.1% de valores faltantes - variable eliminada
 - Fare presenta distribución asimétrica positiva con 116 outliers (13%)
-- Solo el 38% de los pasajeros sobrevivió - slases desbalanceadas
-- Los outliers de Fare se concentran en la lcase 1, como estaba previsto
+- Solo el 38% de los pasajeros sobrevivió - clases desbalanceadas
+- Los outliers de Fare se concentran en la clase 1, como estaba previsto
 
 ## Metodología
 1. Exploración inicial - dimensiones, tipos de variables, estadísticos
