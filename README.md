@@ -5,7 +5,9 @@ Análisis exploratorio del dataset del Titanic para identificar patrones en los 
 
 ## Dataset
 **Fuente:** Kaggle / datasciencedojo
+
 **Dimensiones:** 891 pasajeros, 12 variables
+
 **Variables clave:** Survived, Pclass, Age, Fare, Sex
 
 ## Hallazgos principales
