@@ -22,10 +22,10 @@ Análisis exploratorio del dataset del Titanic para identificar patrones en los 
 4. Visualización - histograma, barplot y boxplot por grupos
 
 ## Recomendaciones para la siguiente etapa
-- Convertir 'Survided' y 'Pclass' a factor antes de modelar
+- Convertir 'Survived' y 'Pclass' a factor antes de modelar
 - Aplicar transformación 'log1p(Fare)' en Feature Engineering
 - Evaluar la imputación múltiple para 'Age' como alternativa a la mediana
 
-## Cómmo ejecutar
+## Cómo ejecutar
 Abrir '01_eda_titanic.R' en RStudio y ejecutarlo completo.
 La paquetería necesaria es tidyverse y ggplot2.
