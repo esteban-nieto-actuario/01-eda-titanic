@@ -21,6 +21,9 @@ Análisis exploratorio del dataset del Titanic para identificar patrones en los 
 3. Detección de outliers con método IQR
 4. Visualización - histograma, barplot y boxplot por grupos
 
+## Herramientas
+R, Tidyverse, ggplot2
+
 ## Recomendaciones para la siguiente etapa
 - Convertir 'Survived' y 'Pclass' a factor antes de modelar
 - Aplicar transformación 'log1p(Fare)' en Feature Engineering
