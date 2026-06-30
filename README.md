@@ -34,3 +34,18 @@ R, Tidyverse, ggplot2
 ## Cómo ejecutar
 Abrir '01_eda_titanic.R' en RStudio y ejecutarlo completo.
 La paquetería necesaria es tidyverse y ggplot2.
+
+## Feature Engineering
+- Variables `Survived`, `Pclass`, `Sex`, `Embarked` convertidas a factor
+- `Fare` transformada con log1p para corregir sesgo positivo
+- Nueva variable `familia_total` = SibSp + Parch + 1
+- Nueva variable `viajasolo` (binaria)
+- Nueva variable `titulo` extraída del nombre (Mr, Mrs, Miss, etc.)
+- Eliminadas `SibSp` y `Parch` por multicolinealidad con `familia_total`
+- Eliminadas `PassengerId`, `Name`, `Ticket` por no aportar valor predictivo
+
+## Archivos
+|            Archivo                 |             Descripción                |
+|------------------------------------|----------------------------------------|
+| `01_eda_titanic.R`                 | Análisis exploratorio inicial          |
+| `02_feature_engineering_titanic.R` | Transformación y creación de variables |
