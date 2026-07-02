@@ -1,5 +1,11 @@
 # EDA - Titanic Dataset
 
+| Archivo | Descripción |
+|---------|-------------|
+| `01_eda_titanic.R` | Análisis exploratorio inicial |
+| `02_feature_engineering_titanic.R` | Transformación y creación de variables |
+| `03_modelo_regresion_titanic.ipynb` | Regresión logística en Python — AUC 0.88 |
+
 ## Objetivo
 Análisis exploratorio del dataset del Titanic para identificar patrones en los datos, variables con valores faltantes y distribución de variables clave antes de modelar.
 
@@ -44,8 +50,12 @@ La paquetería necesaria es tidyverse y ggplot2.
 - Eliminadas `SibSp` y `Parch` por multicolinealidad con `familia_total`
 - Eliminadas `PassengerId`, `Name`, `Ticket` por no aportar valor predictivo
 
-## Archivos
-|            Archivo                 |             Descripción                |
-|------------------------------------|----------------------------------------|
-| `01_eda_titanic.R`                 | Análisis exploratorio inicial          |
-| `02_feature_engineering_titanic.R` | Transformación y creación de variables |
+## Hallazgos del modelo de Regresión Logística
+- El modelo identifica Sex, Pclass y Fare como variables 
+  clave para predecir supervivencia
+- Sex_male: odds ratio 0.08 — los hombres tenían 92% menos 
+  probabilidad de sobrevivir que las mujeres
+- Pclass_3: odds ratio 0.30 — tercera clase tenía 70% menos 
+  probabilidad de sobrevivir que primera clase
+- Fare: odds ratio 1.48 — tarifas más altas asociadas 
+  a mayor probabilidad de supervivencia
